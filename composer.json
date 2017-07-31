@@ -1,0 +1,34 @@
+{
+	"name": "resumenext/autoloader",
+	"description": "PSR-4 only autoloader for PHP7",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Resume Next",
+			"email": "resumenext@protonmail.com"
+		}
+	],
+	"require": {
+		"php": ">=7.0.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"ResumeNext\\AutoLoader\\": "src/"
+		}
+	},
+	"require-dev": {
+		"fig-r/psr2r-sniffer": "^0.4.1",
+		"squizlabs/php_codesniffer": "~2.3",
+		"phpunit/phpunit": "^6.2"
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"ResumeNext\\AutoLoaderTest\\": "test/"
+		}
+	},
+	"scripts": {
+		"cs-check": "vendor/bin/phpcs",
+		"cs-fix": "vendor/bin/phpcbf"
+	}
+}
