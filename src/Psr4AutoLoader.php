@@ -58,10 +58,6 @@ class Psr4AutoLoader implements AutoLoaderInterface {
 	 * @return string|false Path to include file, or false on error
 	 */
 	protected function searchClass(string $namespace, string $class) {
-		if ($namespace === "") {
-			return false;
-		}
-
 		if (isset($this->$namespace)) {
 			foreach ($this->$namespace as $path) {
 				$file = $this->resolveInclude($path, $class);
@@ -70,6 +66,10 @@ class Psr4AutoLoader implements AutoLoaderInterface {
 					return $file;
 				}
 			}
+		}
+
+		if ($namespace === "") {
+			return false;
 		}
 
 		$split = $this->splitNamespace($namespace);
