@@ -3,7 +3,6 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.2/phpunit.xsd"
 	backupGlobals="false"
-	bootstrap="./test/bootstrap.php"
 	cacheTokens="true"
 	checkForUnintentionallyCoveredCode="true"
 	beStrictAboutCoversAnnotation="true"
@@ -17,7 +16,6 @@
 		<testsuite name="AutoLoader tests">
 			<directory>./test</directory>
 			<exclude>
-				<file>./test/bootstrap.php</file>
 				<directory>./test/_files</directory>
 			</exclude>
 		</testsuite>
