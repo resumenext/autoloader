@@ -11,7 +11,7 @@ class Manager implements ManagerInterface {
 	protected $loaders = [];
 
 	public function has(string $identifier): bool {
-		return isset($this->autoloaders[$identifier]);
+		return isset($this->loaders[$identifier]);
 	}
 
 	public function register(AutoLoaderInterface $autoloader, bool $prepend = false): string {
