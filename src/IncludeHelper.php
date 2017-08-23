@@ -5,6 +5,8 @@ namespace ResumeNext\AutoLoader;
 /**
  * Wrappers for include/require statements, to
  * avoid leaking the $this context in the file
+ *
+ * @codeCoverageIgnore
  */
 abstract class IncludeHelper {
 

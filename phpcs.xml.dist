@@ -5,6 +5,7 @@
 	<file>./test</file>
 	<rule ref="./vendor/fig-r/psr2r-sniffer/PSR2R/ruleset.xml">
 		<exclude name="PSR2.Namespaces.UseDeclaration.MultipleDeclarations"/>
+		<exclude name="PSR2R.Commenting.DocBlockTagTypes.Unknown"/>
 		<exclude name="PSR2R.Commenting.DocComment.ContentAfterOpen"/>
 		<exclude name="PSR2R.Commenting.DocComment.ContentBeforeClose"/>
 		<exclude name="PSR2R.Commenting.DocComment.SpacingBeforeShort"/>

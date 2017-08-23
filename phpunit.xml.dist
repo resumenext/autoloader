@@ -15,9 +15,7 @@
 	<testsuites>
 		<testsuite name="AutoLoader tests">
 			<directory>./test</directory>
-			<exclude>
-				<directory>./test/_files</directory>
-			</exclude>
+			<exclude>./test/_files</exclude>
 		</testsuite>
 	</testsuites>
 	<filter>
