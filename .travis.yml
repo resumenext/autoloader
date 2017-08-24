@@ -1,0 +1,14 @@
+language: php
+sudo: false
+dist: trusty
+
+php:
+  - '7.0'
+  - '7.1'
+
+install:
+ - composer install
+
+script:
+  - composer run cs-check
+  - vendor/bin/phpunit --coverage-clover clover.xml
